@@ -1,10 +1,13 @@
-# gpui — Screensight fork
+# gpui — Screensight patched mirror
 
-Patched copy of `gpui` **0.2.2**, derived from the crate published out of
-[zed-industries/zed](https://github.com/zed-industries/zed) (gpui has no
-standalone upstream repository).
+A patched copy of the published `gpui` **0.2.2** crate, derived from the source
+published out of [zed-industries/zed](https://github.com/zed-industries/zed)
+(`crates/gpui`).
 
-Screensight consumes this through a rev-pinned git patch in `[patch.crates-io]`.
+This is a **mirror, not a fork**: gpui has no standalone upstream repository, and
+building from the zed monorepo would use its `workspace`/`path` dependency graph
+and clone ~520 MB. Screensight therefore consumes this crate through a rev-pinned
+git patch in `[patch.crates-io]`.
 
 ## Patch
 
